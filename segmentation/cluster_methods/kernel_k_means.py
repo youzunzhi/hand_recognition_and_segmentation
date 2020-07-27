@@ -40,8 +40,8 @@ def get_distance_matrix(gram_matrix, cluster):
         term3 = gram_matrix[cluster[:, k]][:, cluster[:, k]].sum()
         cluster_k_cnt = cluster[:, k].sum()
         if cluster_k_cnt > 0:
-            term2 *= (-2)/cluster_k_cnt
-            term3 *= 1/(cluster_k_cnt**2)
+            term2 *= (-2) / cluster_k_cnt
+            term3 *= 1 / (cluster_k_cnt ** 2)
         distance_matrix[:, k] = term2 + term3
     return distance_matrix
 
