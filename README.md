@@ -80,11 +80,11 @@ python cluster.py
 
 which will get the segmentation result of this image in the `outputs/segmentation` directory:
 
-![](outputs/segmentation/Pic_2018_07_24_100447_blockId#2797_seg_3040.png)
+![](https://github.com/youzunzhi/hand_recognition_and_segmentation/blob/master/outputs/segmentation/Pic_2018_07_24_100447_blockId%232797_seg_3040.png)
 
 Note that the resolution of the segmentation is so low because we downsampled the image to 30x40 before applying clustering method. It then only needs 0.5-1s to segment. If you change this [line](https://github.com/youzunzhi/hand_recognition_and_segmentation/blob/a615c1b147ede41faf9e020de641ff4f8ea3c958/cluster.py#L7) to `60, 80`, it will take 30-40s with probably better result:
 
-![](outputs/segmentation/Pic_2018_07_24_100447_blockId#2797_seg.png)
+![](https://github.com/youzunzhi/hand_recognition_and_segmentation/blob/master/outputs/segmentation/Pic_2018_07_24_100447_blockId%232797_seg.png)
 
 
 
