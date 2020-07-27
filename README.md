@@ -57,6 +57,8 @@ Precision: 0.8571 (108/126)
 Recall: 0.8438 (108/128)
 ```
 
+
+
 To grid search the hyperparameter choices of SVM, uncomment this [line](https://github.com/youzunzhi/hand_recognition_and_segmentation/blob/a615c1b147ede41faf9e020de641ff4f8ea3c958/svm.py#L104) in `svm.py` and run it:
 
 ```python
@@ -83,6 +85,8 @@ which will get the segmentation result of this image in the `outputs/segmentatio
 Note that the resolution of the segmentation is so low because we downsampled the image to 30x40 before applying clustering method. It then only needs 0.5-1s to segment. If you change this [line](https://github.com/youzunzhi/hand_recognition_and_segmentation/blob/a615c1b147ede41faf9e020de641ff4f8ea3c958/cluster.py#L7) to `60, 80`, it will take 30-40s with probably better result:
 
 ![](outputs/segmentation/Pic_2018_07_24_100447_blockId#2797_seg.png)
+
+
 
 To grid search the hyperparameter choices of clustering methods, uncomment this [line](https://github.com/youzunzhi/hand_recognition_and_segmentation/blob/a615c1b147ede41faf9e020de641ff4f8ea3c958/cluster.py#L248) in `cluster.py` and run it:
 
